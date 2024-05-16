@@ -26,14 +26,16 @@ const DogBreedForm = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="dog-breed">Breed:</label>
-        <input type="text" id="dog-breed" name="dog-breed" value={breed} onChange={(e) => setBreed(e.target.value)}/>
-        <button type="submit">Submit</button>
-      </form>
+    <div className="flex">
+      <div className="w-1/4 p-4">
+        <form onSubmit={handleSubmit} className="mb-4">
+          <label htmlFor="dog-breed" className="block text-gray-700 font-bold mb-2">Breed:</label>
+          <input type="text" id="dog-breed" name="dog-breed" className="border border-gray-300 rounded-md p-2 mr-2 w-80" value={breed} onChange={(e) => setBreed(e.target.value)}/>
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2">Submit</button>
+        </form>
+      </div>
 
-      {image && <img src={image} alt="Dog" />}
+      <div className="w-1/4 p-4 flex justify-center items-center">{image && <img src={image} alt="Dog" className="rounded-md shadow-md max-w-full h-auto"/>}</div>
     </div>
   )
 }
