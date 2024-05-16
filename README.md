@@ -5,20 +5,20 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 3.0.0
 
-* System dependencies
+* Rails version - 7.1.3.2
 
-* Configuration
+* Database creation : Not needed
 
-* Database creation
+## Setup:
+```ruby
+bundle install
+yarn install
+```
 
-* Database initialization
+## Run server locally:
+```./bin/dev```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Screenshot
+![image](https://github.com/rakeshtech25/dog-snap/assets/69623042/444e18fd-5d8f-48ad-b4fe-9c62510f8d31)
